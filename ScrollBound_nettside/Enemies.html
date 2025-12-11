@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link href="enemies.css" rel="stylesheet" />
+    <title>ScrollBound</title>
+    <link href="img/icon.jpg" type="image/x-icon" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="enemy-background">
+     <div class="menu-div">
+        <div class="title-div-flex">
+            <a href=index.html class="maintittel">ScrollBound</a>
+        </div>
+        <div class="menubutton-div-flex">
+            <a class=menuactive href="Enemies.html">Enemies</a>
+            <a class=menubuttons href="Info.html">Info</a>
+            <a class=menubuttons href="Abilities.html">Abilities</a>
+
+        </div>
+        <div class="div-200px">
+            <!--Empty div-->
+        </div>
+    </div>  
+    <div class="abilities-grid">
+        <div class="ability-space">
+            <img src="img/enemies/zombie.png" width="100%">
+        </div>
+        <div  class="ability-space">
+            <h2 class="bold">Shambling Corpse</h2>
+            <p class="ability-text"><span class="bold">Description: </span>Slow, <span class="text-tooltip" title="Meaning: Rotting or decomposing through the action of bacteria">decaying </span>humanoid that lumbers directly toward the player.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Low health, very low movement speed. Its only threat is getting overwhelmed by numbers or its <span class="bold">Grasp </span>attack, which briefly slows the player if it hits.</p>
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/skeleton-warrior.png" width="100%">
+        </div>
+        <div  class="ability-space" id="skeleton-warrior">
+            <h2><span class="bold">Skeleton Warrior</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A common but dangerous early-game enemy.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span></p><ul>
+                <li><span class="bold">Heavy Cleave: </span>A slow, predictable, but <span class="bold">high-damage swing. </span>Requires a timed dodge from the player.</li>
+                <li><span class="bold">Bone Quake: </span>Stops and emits a magical, <span class="text-tooltip" title="Meaning: make (someone) nervous, worried.">rattling</span> "roar" that briefly <span class="bold">slows the player's movement speed </span>upon hit.</li>
+            </ul>
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/skeleton-archer.png" width="100%">
+        </div>
+        <div class="ability-space">
+          <h2><span class="bold">Skeleton Archer</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A bare-bones skeleton, surprisingly agile, wielding a crude bow.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Stays at a medium distance and fires slow, easy-to-dodge projectiles. If the player gets too close, it will clumsily try to hit them with the bow (a very weak melee attack) before rolling away to reset its range.</p>  
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/Grave-Howler.png" width="100%">
+        </div>
+        <div class="ability-space">
+          <h2><span class="bold">Gravehowler</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A skeletal wolf-like creature <span class="text-tooltip" title="Meaning: cover, surround, or encircle (something).">wreathed</span> in shadow. It is fast and agile but fragile, relying on sudden strikes rather than endurance.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Leaps at the player with a <a class="in-page-link" href="Abilities.html#Earthen-Shield">Shadow Slash</a>, applying a Cursed Mark that increases all subsequent damage the target takes. </p>  
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/rat-mass.png" width="100%">
+        </div>
+        <div class="ability-space">
+             <h2><span class="bold">Infested Rat Swarm</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A mass of glowing-eyed rats, animated by necrotic energy, moving as a single, shifting blob.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Fast, low damage, and high aggression. When killed, the "swarm" splits into two smaller, weaker swarms that each have their own pathing for a few seconds before <span class="text-tooltip" title="Meaning: dying.">expiring</span>. <span class="bold">Forces area control.</span></p>  
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/Carrion-Leech.png" width="100%">
+        </div>
+        <div class="ability-space">
+          <h2><span class="bold">Carrion Leech</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A bloated, slug-like parasite that crawls slowly across the ground. It is weak in melee combat but dangerous if left unchecked.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span> It uses <a class="in-page-link" href="Abilities.html#Phantom-Shroud">Vitality</a> Siphon and fires a stream of crimson-black energy at the player, dealing damage and restoring its own health.</p>  
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/Ashen-idol.png" width="100%">
+        </div>
+        <div class="ability-space">
+          <h2><span class="bold">Ashen Idol</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A small, floating <span class="text-tooltip" title="Meaning: a sculpture or model of a person.">effigy</span> of cracked stone and glowing runes. It is immobile and fragile, acting more like a trap than a fighter.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>When struck, it uses <a class="in-page-link" href="Abilities.html">Arcane Nova</a> and releases a burst of magical energy, damaging and briefly interrupting nearby players while reducing their defense.</p>  
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/will-o-wisp.png" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2><span class="bold">Will-o-Wisp</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A small, floating ball of sickly green or purple light with no physical body.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Cannot be damaged by standard attacks, only magic or ranged attacks. It randomly teleports short distances and fires a single, slow-moving <span class="bold">Curse Bolt </span>that <span class="bold">temporarily reduces the player's attack damage.</span></p>
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/chained-specter.png" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2><span class="bold">Chained Specter</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A translucent figure bound by heavy, glowing chains.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Floats slowly. It has a high chance to pass through <span class="text-tooltip" title="Meaning: a thing that blocks one's way (like tables or barrels).">obstacles</span> . Its main attack is a short-range pull with its chains that drags the player toward it, often into other nearby enemies.</p>
+        </div>
+    </div>
+    <h2 id="Elites">Elites</h2>
+    <div class="abilities-grid">
+        <div class="ability-space">
+            <img src="img/enemies/The-Pestilent-Lord.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">The Pestilent Lord </span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>An <span class="text-tooltip" title="Meaning: Area-denial refers to a strategic concept where an enemy restricts specific part of the battlefield.">area-denial</span> specialist focused on <span class="text-tooltip" title="Meaning: (of a disease or condition) making someone very weak.">debilitating</span> the player with disease.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span></p><ul>
+                <li><span class="bold">Contagion Pool:</span> The Lord continuously excretes puddles that inflict the <span class="bold">Sickness</span> debuff. The player must use <a class="in-page-link" href="Abilities.html#Arcane-Nova">Blink Step</a> or <a class="in-page-link" href="Abilities.html#Relic-Overcharge">Phantom Shroud</a> to rapidly cross the contaminated area without taking too much damage.</li>
+                <li><span class="bold">Vial Burst: </span> Vial Burst: It periodically spits a large projectile that explodes into smaller, short-lived toxic AoEs. This is an excellent moment to use <span class="bold">Void Trap </span>to group the debris and clear the attack..</li>
+            </ul>
+        </div>          
+        <div class="ability-space">
+            <img src="img/enemies/Bone-collossus.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">Bone Colossus</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A massive, <span class="text-tooltip" title="Meaning: extremely tall, especially in comparison with the surroundings.">towering</span> golem crudely formed from the merged bones of multiple large creatures.</p>
+            <ul><p class="ability-text"><span class="bold">Mechanic: </span>Slow movement, but devastating <span class="text-tooltip" title="Meaning: Area-of-effect.">AoE</span> attacks (a ground-slam that briefly stuns). When defeated, it doesn't just die; its massive form collapses, releasing 3-4 <a href="#skeleton-warrior" class="in-page-link">Skeleton Warriors</a> that it was formed from, forcing the player to clear a second, quick wave of enemies.</p>
+            <li><span class="bold">Earthen Shield:</span> Raises a barrier of rock that blocks frontal attacks. When it shatters, it releases a shockwave that knocks enemies back.</li>
+            </ul>
+        </div>
+
+        <div class="ability-space">
+            <img src="img/enemies/Obsidian-warden.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">Obsidian Warden</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A <span class="text-tooltip" title="Meaning: extremely tall, especially in comparison with the surroundings.">towering</span> <span class="text-tooltip" title="Meaning: A being or structure that has been artificially created, often through magic or other unnatural means..">construct</span> of black stone and bone fragments, moving with deliberate slowness but immense resilience.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span></p><ul> 
+                <li><a class="in-page-link" href="Abilities.html#Blink-Step">Earthen Shield:</a> Raises a barrier of rock that blocks frontal attacks. When it shatters, it releases a shockwave that knocks enemies back.</li>
+                <li><a class="in-page-link" href="Abilities.html#Midas-Touch">Void Trap:</a> Throws a vortex of dark energy onto the ground, pulling players toward its center while dealing minor damage.</li>
+            </ul>
+        </div>
+                <div class="ability-space">
+            <img src="img/enemies/Goldbound-Revenant.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">Goldbound Revenant</span></h2>
+            <p class="ability-text"><span class="bold">Description:</span> A mummified warrior wrapped in golden chains and stitched with coins. It is slow but strikes with heavy, deliberate blows.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>Uses <a class="in-page-link" href="Abilities.html#Shadow-Slash">Midas Touch</a> to curse the player, the next few seconds when the player is hit he drops gold or rare enchants.</p>
+        </div>
+    </div>
+    <h2 id="bosses">Bosses</h2>
+    <div class="abilities-grid" id="margin-bottom">
+        <div class="ability-space">
+            <img src="img/enemies/The-Reanimator.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">The Reanimator</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A corrupted priest or disgraced necromancer still clinging to a sliver of life.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>It stays out of melee range and focuses on <span class="bold">summoning </span>a constant stream of 1-2 low-tier undead <a href="#skeleton-warrior" class="in-page-link">(Skeleton Warrior or Skeleton Archers)</a>. The player must prioritize killing The Reanimator quickly, as the battlefield will otherwise become completely overrun. He also have a slow-to-cast <span class="bold">Soul Drain </span>beam.</p>
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/Plague-Alchemist.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">The Plague Alchemist</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A <span class="text-tooltip" title="Meaning: comically or repulsively ugly or distorted.">grotesque</span> figure in a tattered alchemist&#39;s robe, carrying a leaking pack of foul vials. It is frail in close combat but highly mobile and dangerous at range.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span></p><ul>
+                <li><a class="in-page-link" href="Abilities.html#Vitality-Siphon">Pestilence Well:</a> Smashes a vial to create a pool of <span class="text-tooltip" title="Meaning: the communication of disease from one person or organism to another by close contact.">contagion</span> that damages enemies standing in it and reduces their damage output after leaving. </li>
+                <li><a class="in-page-link" href="Abilities.html#Void-Trap">Grave Echo:</a> Summons temporary skeletal servants from nearby corpses or by sacrificing its own vitality.</li>
+                <li><a class="in-page-link" href="Abilities.html#Relic-Overcharge">Phantom Shroud:</a> Dashes rapidly through the battlefield, becoming <span class="text-tooltip" title="Meaning: impossible to harm or damage.">invulnerable</span> during the dash but slowed afterward.</li>
+            </div>
+        <div class="ability-space">
+            <img src="img/enemies/Shadow-wisp.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">The Shadow Wisp</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A massive, swirling entity of pure shadow and <span class="text-tooltip" title="Meaning: characterized by malice; intending or intended to do harm.">malicious</span> intent. It is semi-transparent and moves erratically.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>It dashes frequently, dealing high damage on impact. Its main move is <span class="bold">Void Surge</span>, where it teleports to the center of the arena, rapidly spawns smaller shadows, and then unleashes a radial attack. The key to beating it is using <a href="Abilities.html#Midas-Touch" class="in-page-link">Void Trap</a> to group and stall the smaller shadows, allowing the player to focus the main Wisp during its vulnerable moments.</p>    
+        </div>
+        <div class="ability-space">
+            <img src="img/enemies/The-chronos-Alchemist.jpg" width="100%">
+        </div>
+        <div div class="ability-space">
+            <h2><span class="bold">The Chronos Alchemist</span></h2>
+            <p class="ability-text"><span class="bold">Description: </span>A frail-looking mage in tattered robes who floats behind a series of <span class="text-tooltip" title="Meaning: (of a substance) easily evaporated at normal temperatures.">volatile</span>, glowing <span class="bold">vials</span> that act as his shield.</p>
+            <p class="ability-text"><span class="bold">Mechanic: </span>He mainly attacks by throwing random, exploding vials. Periodically, he will cast a <a class="in-page-link" href="Abilities.html#Pestilence-Well">Time-Lock Field</a> (large AoE). The player must use <a class="in-page-link" href="Abilities.html#Arcane-Nova">Blink Step</a> to escape or <a class="in-page-link" href="Abilities.html#Blink-Step">Earthen Shield</a> to block the impending damage when the field detonates. Defeating him requires high-burst damage and careful positioning.</p>
+        </div>
+    </div>
+
+    <h2 id="main-boss">Mainboss</h2>
+    <div class="aethelgard-css-grid">
+        <div id="aethelgard-title">
+            <h2 id="Aethelgard">Aethelgard</h2>
+            <h3 id="Aethelgard-alt">AKA. "Necromancer"</h3>
+        </div>
+        <div id="Aethelgard-description-title">
+            <h3>Description</h3>
+            <div id="Aethelgard-desc-text">
+                <h4>Aethelgard is not a risen corpse or a man. It achieved <span class="no-text-shadow">██████</span>, <span class="no-text-shadow">██ █ ██ ████ █████ ████</span>. Visually, it manifests as a towering, asymmetrical spire of calcified, dark-grey bone, laced with pulsating veins of sickly necrotic light. It doesn't move so much as shift, grinding and cracking the floor with every ponderous step. </h4>
+                <h4>Instead of a head, its central mass is dominated by the titular <span class="no-text-shadow">████</span>-<span class="no-text-shadow">██████</span>: a gaping, silent void where thousands of ghostly, flickering blue and green faces are permanently sealed, swirling like a slow-moving, <span class="text-tooltip" title="Meaning: something that seems evil, threatening, or likely to cause harm">sinister</span> galaxy. This void is where it draws and holds the essence of every soul that falls within the cursed lands.</h4>
+                <h4>Legend says Aethelgard was the ritual core of a forgotten necromantic civilization. It wasn't built; it grew from the single, cataclysmic act of anchoring an entire city's <span class="no-text-shadow">████ ██ ██████</span> to the material world. It is the permanent sinkhole of spirit energy, the reason death in your game world is never truly final, and the source of all the spreading corruption. To defeat Aethelgard is not just to kill a boss, but to re-release the primordial energy of the dead and lift the curse from the land.</h4>	
+                <h4>The Obfuscating Truth: The <span class="no-text-shadow">████-██████</span> does not just draw in the spirits of the dead; it actively erodes the fabric of knowledge relating to its own existence. Any document, carving, or historical record that bears the name Aethelgard or describes the <span class="no-text-shadow">█████████ ███████</span>+ becomes increasingly corrupted.and ultimately ending's existance</h4>
+                <h4>The letters twist, the ink fades and bleeds, and the text itself seems to "shift" before the eyes, becoming almost painfully difficult to read and comprehend—as if the document is actively fighting the reader's understanding. Scholars who dedicate themselves to its history often go mad.</h4>
+            </div> 
+        </div> 
+        <div id="old-pic1">
+            <img src="img/enemies/aethelgard-ancient-sketch2.png" width="100%">
+        </div>
+        <div id="old-pic2">
+            <img src="img/enemies/aethelgard-ancient-sketch3.jpg" width="100%">
+        </div>
+        <div id="Aethelgard-encounter-title">
+            <h3>Encounter</h3>
+            <div id="Aethelgard-encounter-text">
+                <h4>The fight against Aethelgard is a brutal test of endurance and target prioritization.</h4>
+                <h5><span class="abilityaethelgard">The Anchor's Grip</span>: Periodically, the central void emits a vast, invisible wave. This doesn't deal damage directly, but every low-tier undead (like Shambling Corpses) currently on the field is instantly healed and permanently empowered, gaining a damage and speed buff. This forces the player to keep the battlefield clear. </h5>
+                <h5><span class="abilityaethelgard">Calcified Aegis</span>: The towering bone body is highly resistant to physical damage. The only weak point is the glowing necrotic veins that pulse across its surface; the player must wait for these veins to temporarily <span class="text-tooltip" title="Meaning: an excessive amount of something">overload</span> and flash purple before dealing significant damage.</h5> 
+                <h5><span class="abilityaethelgard">The Soul Leech</span>: Aethelgard occasionally lashes out with a slow, sweeping attack using one of its massive bone <span class="text-tooltip" title="Meaning: something that is added or attached to something larger or more important">appendages</span>. If this hits the player, it drains a huge chunk of health and immediately summons a high-tier enemy (like The Reanimator or Bone Colossus) to the arena.</h5>
+            </div>
+
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container small">
+            <p>Laget av <i>Daniel Jørstad Sekkenes</i> © <span id="year"></span></p>
+            <p>Laget av <i>Shane Brandl</i> © <span id="year"></span></p>
+            <p>Laget av <i>Fredrik Hjemdhal Lyberg</i> © <span id="year"></span></p>
+        </div>
+  </footer>
+</body>
+</html

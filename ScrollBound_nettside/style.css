@@ -1,0 +1,401 @@
+:root{
+    --header-height: 70px; 
+}
+
+body{
+    min-width: 700px;
+    background-color: #313131;
+    color: #fff;
+    margin: 0px;
+    font-family: Skranji;
+    padding-top: var(--header-height); 
+}
+.first-paragraph-info{
+    margin: 1%;
+    text-align: center;
+}
+
+.info-div{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+.maintittel{
+    color:goldenrod;
+    font-size: 40px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    text-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+    text-align: left;
+    text-decoration: none;
+}
+h3{
+    margin-top: 70px;
+    text-align: center;
+}
+.menuactive,
+.menubuttons{
+    margin: 10px;
+    font-size: 20px;
+    color:#fff;
+    background-color: #515151;
+    border: 10px black;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.menuactive{
+    color: goldenrod;
+    background-color: #504E45 ;
+}
+.menuactive:hover,
+.menubuttons:hover{
+    opacity: 0.8;
+}
+.menu-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    background-color: #414141;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    box-shadow: 20px 15px 10px rgba(0,0,0,0.3)
+}
+
+.div-200px,
+.title-div-flex{
+    margin-top: 0px;
+    text-align: center;
+    width: 220px;
+    margin-left: 1.5%;
+}
+.div-200px{
+    min-width: 1px;
+}
+.menubutton-div-flex{
+    min-width: 310px
+}
+.info-flex-grid{
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.paragraph{
+    background-color: rgba(65, 65, 65, 0.25);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(200px);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.paragraph-text{
+    padding: 10px;
+    flex: 1; 
+}
+.paragraph-title{
+    margin-top: 20px;
+}
+.paragraph-main-content{
+    display: flex;
+    align-items: center;
+}
+.paragraph-img{
+    width: 350px;
+    margin: 10px;
+}
+.bold-xbox{
+    color: #9bc848;
+}
+.playstation{
+    color:  #003087;
+}
+.switch{
+    background: linear-gradient(to right, #f00, #000, #00f);
+    background-clip: text;
+    color: transparent;
+
+}
+.pc{
+    background: linear-gradient(to  top right, #f00, #95ff95, #00f);
+    background-clip: text;
+    color: transparent;
+
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin: 20px;
+    font-size: 40px;
+}
+.text-tooltip {
+    cursor: help;
+    border-bottom-color: rgba(159, 11, 11, 1);
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+}
+.ability-space{
+    height: 400px;
+    border: 2px solid grey;
+    box-sizing: border-box;
+    background-image: url(img/ancient-scroll.jpg);
+    color: rgb(75, 10, 10);
+    box-shadow: 10px 20px 10px rgba(0,0,0,1);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+.abilities-grid{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    row-gap: 0px;
+    column-gap: 0px;
+    width: 868px;
+    grid-template-columns: 400px 1fr;
+    column-count: 2;
+}
+@keyframes appear{
+    0%{
+        transform: translate(-20px, 100px) rotate(4deg);
+    }
+    100%{
+        transform: translate(0, 0px);
+    }
+}
+.mainpicture{
+    width: 100%;
+    display: flex;
+}
+.ability-text{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bold{
+    font-weight: bold;
+    color: rgb(119, 13, 13);
+}
+#main-picture{
+    background-image: url(img/main-title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.in-page-link{
+    border-bottom-style: solid;
+    border-color: rgb(119, 13, 13);
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(119, 13, 13);
+}
+.in-page-link:hover{
+    color: rgb(18, 99, 42);
+    
+    border-color: rgb(18, 99, 42);
+}
+
+.aethelgard-css-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url(img/enemies/aethelgard-ancient-sketch1.png);
+    background-position: center;
+    height: 2000px;
+    background-size: cover;    
+}
+#old-pic1{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+}
+#main-boss{
+    font-size: 350%;
+}
+#old-pic2{
+    grid-column: 8 / span 2;
+    grid-row: 7 / span 2;
+}
+#aethelgard-title{
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 2;
+    text-align: center;
+    margin: 0px;
+}
+#Aethelgard{
+    font-size: 120px;
+    color: rgba(0, 59, 0, 1);
+    margin: 0px;
+    margin-top: 30px;
+    text-shadow: 7px 7px 6px rgba(0,0,0,0.7);
+}
+#Aethelgard-alt{
+    color: rgba(0,59,9,0.9)
+}
+#margin-bottom{
+    margin-bottom:50px;
+}
+#Aethelgard-description-title{
+    grid-column: 5 / span 5;
+    grid-row: 3 / span 4;
+    text-align: center;
+    color: rgba(119, 13, 13, 0.9)
+}
+#Aethelgard-desc-text{
+    text-align: middle;
+    margin-left: 10px;
+    text-shadow: 0 0 20px rgb(0, 59, 0);
+    color: rgb(0, 0, 0)
+}
+.abilityaethelgard{
+    text-shadow: 0 0 20px rgba(0,0,0,1);
+    color: rgba(255,0,0,1)
+}
+#Aethelgard-encounter-title{
+    grid-column: 2 / span 5;
+    grid-row: 7 / span 3;
+    text-align: center;
+    color: rgba(119,13,13,0.9);   
+}
+#Aethelgard-encounter-text{
+    text-align: middle;
+    margin-left: 10px;
+    text-shadow: 0 0 20px rgb(0, 59, 0);
+    color: rgb(0,0,0)
+}
+#enemy-background{
+    background-image: url(img/enemies-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#abilities-background{
+    background-image: url(img/Background-abilities.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#info-background{
+    background-image: url(img/Info-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.no-text-shadow{
+    text-shadow: 0 0 0;
+}
+.top-fix{ 
+    display: none;
+}
+/* █ █ copy and replace text for black box aka "redacted", also change redacted text to color:rgba(0,0,0,1) */
+@media screen and (max-width: 768px){
+    body{
+        min-width: 0px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .abilities-grid{
+        width: 90%;
+        grid-template-columns: 1fr;
+        column-count: 1;
+    }
+    .ability-space{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .info-flex-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-200px{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+    .title-div-flex,
+    .menubutton-div-flex{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        min-width: none;
+    }
+    .menu-div{
+        flex-direction: column;
+        height: 11%;
+        row-gap: 2%;
+        padding-bottom: 10px;
+    }
+    .paragraph-main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .paragraph-img{
+        width: 90%;
+    }
+    .class-title-div-flex{
+        width: 10%;
+    }
+    .menu-tittel{
+        padding-bottom: 10px;
+    }
+    #Aethelgard{
+        font-size: 310%;
+    }
+    #main-picture{
+        background-image: url(img/Phone-home.png);
+    }
+    .menuactive,
+    .menuactive:hover,
+    .menubuttons,
+    .menubuttons:hover{
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 15px;
+    }
+    .aethelgard-css-grid{
+        background-image: url(img/Phone-boss.png);
+    }
+    #Aethelgard-description-title{
+        grid-column: 1 / span 10;
+        grid-row: 3 / span 4;
+        font-size: 3.3svw;
+    }
+    #Aethelgard-encounter-title{
+        grid-column: 1 / span 10;
+        grid-row: 8 / span 3;
+        font-size: 3.3svw;
+    }
+    #old-pic1{
+        grid-row: 1;
+        grid-column: 1 / span 1;
+    }
+    #old-pic2{
+        grid-row: 7 / span 2;
+        grid-column: 4 / span 4;
+    }
+
+}
+.site-footer {
+  margin-top: auto;
+  background: #515151;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--muted);
+  position: relative;
+  flex-shrink: 0;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prosjekter etter tema</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="bilder/Icon/icon.jpg" type="image/x-icon" rel="icon">
+</head>
+<body class="page-bg projects-page">
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Min portefølje</a>
+      <nav id="siteNav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="om-meg.html">Om meg</a></li>
+          <li><a href="bilder.html">Bilder</a></li>
+          <li><a href="prosjekter-tema.html" aria-current="page">Prosjekter</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="forklaring.html">Forklaringer</a></li> <!-- Nytt navigasjonsfelt -->
+        </ul>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Åpne meny">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Prosjekter etter tema</h1>
+      <p>Velg et tema for å se prosjektene dine innen foto, plakater, film, programmering m.m.</p>
+    </section>
+
+    <section class="project-menus">
+      <!-- FOTO -->
+      <details class="project-menu">
+        <summary>Foto prosjekter</summary>
+        <ul>
+          <li><a href="lek med kamera.html" target="_blank">Lek med kamera</a></li>
+        </ul>
+      </details>
+
+      <!-- PLAKATER -->
+      <details class="project-menu">
+        <summary>Plakater</summary>
+        <ul>
+          <li><a href="filplakat.html" target="_blank">Filmplakat</a></li>
+        </ul>
+      </details>
+
+      <!-- FILM & VIDEO -->
+      <details class="project-menu">
+        <summary>Film &amp; video</summary>
+        <ul>
+          <!-- <li><a href="kortfilm.html" target="_blank">Kortfilm</a></li> -->
+        </ul>
+      </details>
+
+      <!-- TEKNOLOGIFORSTÅELSE -->
+      <details class="project-menu">
+        <summary>Teknologiforståelse</summary>
+        <ul>
+          <li><a href="#">Rapport: Hvordan fungerer internett?</a></li>
+          <li><a href="#">Personvern og sosiale medier</a></li>
+          <li><a href="#">Skytjenester og lagring</a></li>
+        </ul>
+      </details>
+
+      <!-- PROGRAMMERING -->
+      <details class="project-menu">
+        <summary>Programmering</summary>
+        <ul>
+          <li><a href="ScrollBound_nettside/index.html" target="_blank">Første nettside</a></li>
+
+        </ul>
+      </details>
+
+      <!-- KONSEPTUTVIKLING -->
+      <details class="project-menu">
+        <summary>Konseptutvikling</summary>
+        <ul>
+          <li><a href="#">Idéarbeid til kampanje</a></li>
+          <li><a href="#">Moodboard &amp; stilretning</a></li>
+          <li><a href="#">Pitch-dokument for kunde</a></li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">
+      <p>Laget av <i>Shane Brandl</i> © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

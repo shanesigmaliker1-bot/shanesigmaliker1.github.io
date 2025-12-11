@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>ScrollBound</title>
+    <link href="img/icon.jpg" type="image/x-icon" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="abilities-background">
+     <div class="menu-div">
+        <div class="title-div-flex">
+            <a href=index.html class="maintittel">ScrollBound</a>
+        </div>
+        <div class="menubutton-div-flex">
+            <a class=menubuttons href="Enemies.html">Enemies</a>
+            <a class=menubuttons href="Info.html">Info</a>
+            <a class=menuactive  href="Abilities.html">Abilities</a>
+        </div>
+        <div class="div-200px">
+            <!--Empty div-->
+        </div>
+    </div>  
+    <div class="abilities-grid">
+        <div class="ability-space">
+            <img src="img/abilities/arcane nova.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Arcane-Nova">Arcane Nova</h2>
+            <p class="ability-text"><span class="bold">Description:</span> The character releases a burst of pure magical energy in a radius around them. </p>
+            <p class="ability-text"><span class="bold">Effect:</span> This ability deals moderate damage to all enemies within a short range and briefly interrupts their actions, making it an excellent <span class="bold">'panic button'</span> when surrounded. It also has a chance to <span class="bold">shatter enemy armor</span>, inflicting a temporary defense debuff on the affected foes.</p>
+            
+        </div>
+        <div class="ability-space"> 
+            <img src="img/abilities/blink step.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Blink-Step">Blink Step</h2>
+            <p class="ability-text"><span class="bold">Description:</span> The adventurer instantaneously teleports a short distance, passing through obstacles and enemies.</p>
+            <p class="ability-text"><span class="bold">Effect:</span> This is primarily <span class="bold">a defensive and positional</span> tool, allowing the player to quickly escape a dangerous situation or reposition behind a slow-moving enemy. Using it leaves behind a faint shimmering residue that momentarily <span class="bold">slows enemies</span> who touch it, granting a slight tactical advantage upon arrival.</p>
+            </p>
+        </div> 
+                <div class="ability-space">
+            <img src="img/abilities/earthen shield.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Earthen-Shield">Earthen Shield</h2>
+            <p class="ability-text"><span class="bold">Description: </span>The character slams a hand to the ground, summoning a temporary, swirling barrier of rock and earth.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>For a very brief period (e.g., 1-2 seconds), the shield <span class="bold">absorbs all incoming damage</span> from the front direction and makes the character immune to knockback. When the shield expires, the stored kinetic energy is released as a <span class="bold">small cone-shaped wave </span>that can <span class="bold">stun or knock back </span>nearby enemies, creating space for the player.</p>
+                
+        </div>
+        <div class="ability-space"> 
+            <img src="img/abilities/shadow slash.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Shadow-Slash">Shadow Slash</h2>
+            <p class="ability-text"><span class="bold">Description: </span>A swift, phantom-like strike that leaves a lingering effect on the target.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>The initial hit deals high damage to a single enemy. More importantly, it applies a <span class="bold">'Cursed Mark' </span>debuff; for the next few seconds, all subsequent damage the enemy takes from any source is increased by a small percentage, making it crucial for <span class="bold">boss fights </span>or focusing down priority targets.</p>
+                
+        </div>  
+        <div class="ability-space"> 
+            <img src="img/abilities/the midas touch.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Midas-Touch">Midas Touch</h2>
+             <p class="ability-text"><span class="bold">Description: </span>A focused enchantment that temporarily imbues the character’s next attack with a strange, alchemical power.</p>
+             <p class="ability-text"><span class="bold">Effect: </span>The next time the player damages an enemy, that enemy has a <span class="bold">guaranteed chance to drop extra gold or a small shard of a rare crafting material </span>upon defeat, even if they don't normally drop anything. This ability is useful for <span class="bold">resource management </span>and maximizing runs by boosting the in-game economy.</p>
+            
+        </div>  
+        <div class="ability-space"> 
+            <img src="img/abilities/void trap.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Void-Trap">Void Trap</h2>
+            <p class="ability-text"><span class="bold">Description: </span>A small, unstable vortex of dark energy is thrown onto the ground.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>This ability creates a small AoE (Area of Effect) on the floor that <span class="bold">pulls nearby lesser enemies towards its center </span>for a short duration, effectively <span class="bold">grouping them up </span>for a follow-up attack. While active, the vortex deals continuous minor damage to anything caught inside, but its true value is the powerful <span class="bold">crowd control </span>it provides.</p>
+        
+        </div> 
+        <div class="ability-space"> 
+            <img src="img/abilities/Grave-Echo.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Grave-Echo">Grave Echo</h2>
+            <p class="ability-text"><span class="bold">Description: </span>A brief column of <span class="bold">greenish-black smoke and faint bone fragments </span>erupts from the ground, quickly forming the Skeletal Servant. The servant's sprite has a shimmering, faint green outline.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>Rips a fragment of spirit from the nearest corpse (or sacrifices 5% of your current HP if no corpse is nearby) to summon a <span class="bold">Skeletal Servant. </span>The servant has low health, lasts for 6 seconds, and primarily functions as an <span class="bold">aggro magnet </span>to distract enemies and absorb a few hits.</p>
+        
+        </div> 
+            <div class="ability-space"> 
+            <img src="img/abilities/Relic-Overcharged.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Relic-Overcharge">Relic Overcharge</h2>
+            <p class="ability-text"><span class="bold">Description: </span>Imbues your equipped weapon (sword, axe, bow) with forgotten power. For the next <span class="bold">4 seconds, </span>your attacks apply a stacking debuff called <span class="bold">Decay. </span>Stacks of Decay deal small damage over time, and if an enemy reaches 5 stacks, they are briefly <span class="bold">Stunned </span>as their body momentarily collapses.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>The equipped weapon emits a quick, hot <span class="bold">pulse of deep violet light, </span>and its sprite momentarily has a flickering purple aura. Each successful hit leaves a residual faint purple energy trail on the target.</p>
+        
+        </div> 
+        <div class="ability-space"> 
+            <img src="img/abilities/Phantom-Shroud.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Phantom-Shroud">Phantom Shroud</h2>
+            <p class="ability-text"><span class="bold">Description: </span>Causes your body to momentarily dissipate into a cloud of shadow and grave dirt. You dash rapidly forward up to 5 tiles, becoming <span class="bold">Completely Invulnerable </span>to all damage for the duration of the dash. However, after exiting the shroud, you suffer a <span class="bold">2-second movement speed penalty.</span></p>
+            <p class="ability-text"><span class="bold">Effect: </span>The character's sprite dissolves instantly into a flurry of <span class="bold">fast-moving dark grey pixels and swirling grave dirt. </span>A ghostly, distorted echo of the character flashes across the dash path.</p>
+        
+        </div> 
+        <div class="ability-space"> 
+            <img src="img/abilities/Vitality-Siphon.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Vitality-Siphon">Vitality Siphon</h2>
+            <p class="ability-text"><span class="bold">Description: </span>A directed burst of dark energy that deals low-to-moderate damage to the first enemy struck. <span class="bold">50% of the damage dealt is immediately returned to the player as health, </span>but the ability's mana cost is slightly higher than average, requiring calculated use.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>A thick, directed <span class="bold">stream of swirling crimson and black smoke </span>shoots from the player's hand toward the enemy. Upon a hit, a separate <span class="bold">crimson stream </span>instantly flows back to the player's chest sprite.</p>
+        
+        </div> 
+        <div class="ability-space"> 
+            <img src="img/abilities/Pestilence-Well.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Pestilence-Well">Pestilence Well</h2>
+            <p class="ability-text"><span class="bold">Description: </span>Smashes a vial of putrescent ichor, creating a 3-tile wide pool of contagion at your target location. Enemies standing in the pool take moderate damage per second and are afflicted with <span class="bold">Sickness, </span>which reduces their damage output by 15% for 3 seconds after they leave the area.</p>
+            <p class="ability-text"><span class="bold">Effect: </span>A glass vial shattering sound is heard as a pool of <span class="bold">sickly yellow-green liquid </span>spreads across the ground, bubbling slowly. Small, dark fly sprites buzz visually above the contaminated area.</p>
+        
+        </div> 
+        <div class="ability-space"> 
+            <img src="img/abilities/Time-Lock-Field.jpg" width="100%">
+        </div>
+        <div class="ability-space">
+            <h2 id="Time-Lock-Field">Time-Lock Field</h2>
+            <p class="ability-text"><span class="bold">Description:</span> The character warps the local flow of time, creating a large, expanding sphere of chronal energy around a targeted area.</p>
+            <p class="ability-text"><span class="bold">Effect:</span> This ability applies a heavy <span class="bold">Slow</span> effect to all enemies caught within its growing radius, reducing their movement and attack speed to near-zero. After a brief delay, the field detonates, dealing high <span class="bold">damage</span> and potentially applying a <span class="bold">Stun</span>, allowing the player to reposition or execute a follow-up attack on immobilized foes.</p>
+        
+        </div> 
+        
+
+    </div>
+    <footer class="site-footer">
+        <div class="container small">
+            <p>Laget av <i>Daniel Jørstad Sekkenes</i> © <span id="year"></span></p>
+            <p>Laget av <i>Shane Brandl</i> © <span id="year"></span></p>
+            <p>Laget av <i>Fredrik Hjemdhal Lyberg</i> © <span id="year"></span></p>
+        </div>
+  </footer>
+</body>
+</html>
