@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Min portefølje</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="bilder/Icon/3.png" type="image/x-icon" rel="icon">
+</head>
+<body class="home-page">
+  
+
+  <main class="container">
+    <section class="hero">
+      <h1>Koden til min enkle C++ kalkolator.</h1>
+      <div class="hero-textbox">
+        <p>#include &ltiostream&gt<br>
+        using namespace std;<br>
+        int main()<br>
+        {<br>
+            int valg = 0;<br>
+            float tall1;<br>
+            float tall2;<br>
+            int heltall1;<br>
+            int heltall2;<br>
+            while (valg != 7) {<br>
+
+                    cout &lt&lt "Du kann velge mellom 7 valg: \n" &lt&lt "Valg 1 = +. \n" &lt&lt "Valg 2 = -. \n" &lt&lt "Valg 3 = *. \n" &lt&lt "Valg 4 = /. \n" &lt&lt "Valg 5 heltalldeling. \n" &lt&lt "Valg 6 = %\n" &lt&lt "Valg 7 avslutte programmet" &lt&lt endl &lt&lt "Skriv inn valget ditt : \n";<br>
+                    cin >> valg;<br>
+                    switch (valg) {<br>
+                    case(1):<br>
+                            cout &lt&lt "Skriv inn to tallenen som u vil regne sammen med en mellomromstegn: \n";<br>
+                            cin >> tall1 >> tall2;<br>
+                            cout &lt&lt "Svaret blir: " &lt&lt tall1 + tall2 &lt&lt endl;<br>
+                            break;<br>
+                    case(2): <br>
+                            cout &lt&lt "Skriv inn to tallenen som u vil regne sammen med en mellomromstegn: \n";<br>
+                            cin >> tall1 >> tall2;<br>
+                            cout &lt&lt "Svaret blir: " &lt&lt tall1 - tall2 &lt&lt endl;<br>
+                            break;<br>
+                    case(3): <br>
+                            cout &lt&lt "Skriv inn to tallenen som u vil regne sammen med en mellomromstegn: \n";<br>
+                            cin &gt&gt tall1 &gt&gt tall2;<br>
+                            cout &lt&lt "Svaret blir: " &lt&lt tall1 * tall2 &lt&lt endl;<br>
+                            break;<br>
+                    case(4):<br>
+                            cout &lt&lt "Skriv inn to tallenen som u vil regne sammen med en mellomromstegn: \n";<br>
+                            cin &gt&gt tall1 &gt&gt tall2;<br>
+                            if (tall2 == 0) {<br>
+                                cout &lt&lt "Du kan ikke skrive 0 som andre tall!\n";<br>
+                            }<br>
+                            else {<br>
+                                cout &lt&lt "Svaret blir: " &lt&lt tall1 / tall2 &lt&lt endl;<br>
+                            }<br>
+                            break;<br>
+                    case(5): <br>
+                            cout &lt&lt "Skriv inn to heltallenen som u vil regne sammen med en mellomromstegn: \n";<br>
+                            cin &gt&gt heltall1 &gt&gt heltall2;<br>
+                            if (heltall2 == 0) {<br>
+                                cout &lt&lt "Du kan ikke skrive 0 som andre tall!\n";<br>
+                            }<br>
+                            else {<br>
+                                cout &lt&lt "Svaret blir: " &lt&lt heltall1 / heltall2 &lt&lt endl;<br>
+                            }<br>
+                            break;<br>
+                    case(6):<br>
+                            cout &lt&lt "Skriv inn to heltallenen som u vil regne sammen med en mellomromstegn: \n";<br>
+                            cin &gt&gt heltall1 &gt&gt heltall2;<br>
+                            if (heltall2 == 0) {<br>
+                                cout &lt&lt "Du kan ikke skrive 0 som andre tall!\n";<br>
+                            }<br>
+                            else {<br>
+                                cout &lt&lt "Svaret blir: " &lt&lt heltall1 % heltall2 &lt&lt endl;<br>
+                            }<br>
+                            break;<br>
+                    case(7):<br>
+                            cout &lt&lt "programmet avsluttes";<br>
+                            break;<br>
+                    
+
+                        
+                    
+                    default:<br>
+                        cout &lt&lt "Ugyldig valg, prøv igjen.\n";<br>
+                        break;<br>
+                    }<br>
+                    
+            }<br>
+            
+            
+
+            return 0;<br>
+            system("pause>0");<br>
+        }<br>
+</p>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">
+      <p>Laget av <i>Shane Brandl</i> © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
